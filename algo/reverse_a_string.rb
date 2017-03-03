@@ -3,6 +3,14 @@
 # comes with Ruby!
 
 def reverse_a_string(string)
+  reversed_string_holder = []
+  split_string = string.split("")
+  i = (string.length - 1)
+  while i >= 0
+    reversed_string_holder << split_string[i]
+    i -= 1
+  end
+  reversed_string_holder.join
 
 end
 

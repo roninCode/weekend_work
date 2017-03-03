@@ -1,6 +1,15 @@
 # Create a person class with readable first_name and last_name attributes 
 # and a method to calculate its full_name.
-
+class Person
+  def initialize(first_name, last_name)
+    @first_name = first_name
+    @last_name = last_name
+  end
+  attr_accessor :first_name, :last_name
+  def full_name
+    return "#{@first_name} #{@last_name}"
+  end
+end
 
 
 # Driver code - don't touch anything below this line.
